@@ -83,7 +83,9 @@ window.setInterval(()=>{
             defnota = defnota +1;
             if(calcf>fitness){
             learn.goods.push(learn.people[c]);
+            if(learn.acheou == false) {
             learn.counter = learn.counter+1;
+          }
             if(calcf>nota){
               nota = defnota;
               __nph__ = learn.people[c];
