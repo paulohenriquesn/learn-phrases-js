@@ -27,7 +27,9 @@ $("#setPhrase").click(()=> {
 
 
 window.setInterval(()=>{
+  if(learn.achou == false){
   $("#generations").text("Learning: " + __phrase__ + " [Generations: " + learn.counter + "]");
+  }
   if(phrase.length <15){
   var randomAlpha = Math.floor(Math.random() * alphabet.length);
   phrase = phrase + alphabet[randomAlpha];
