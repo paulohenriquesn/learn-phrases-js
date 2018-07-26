@@ -1,4 +1,4 @@
-var __phrase__ = location.search.substr(1,location.search.length);
+var __phrase__ = decodeURI(location.search.substr(1,location.search.length));
 
 var alphabet = "ABCEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyz";
 var phrase = "";
