@@ -56,7 +56,9 @@ window.setInterval(()=>{
       if(__phrase__.includes(phrase[x])){
         phraseBckp = phraseBckp + phrase[x];
         learn.generations.push(phraseBckp);
+        if(learn.achou == false){
         learn.counter = learn.counter +1;
+      }
       }
       }
 
@@ -65,7 +67,9 @@ window.setInterval(()=>{
           for(w=0;w<__phrase__.length;w++){
             if(phrase[w] == learn.generations[c][p]){
               learn.people.push(learn.generations[c]);
+              if(learn.achou == false){
               learn.counter = learn.counter +1;
+            }
             }
           }
         }
